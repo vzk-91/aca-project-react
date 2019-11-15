@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
