@@ -6,3 +6,7 @@
   justify-content: space-between;
   box-sizing: border-box;
 }
+html{
+  color: white;
+  font-family: 'Kalam', cursive;
+}

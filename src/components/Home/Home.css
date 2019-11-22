@@ -1,0 +1,14 @@
+.mainhome {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Kalam', cursive;
+  }
+  html{
+    color: white;
+    font-family: 'Kalam', cursive;
+  }

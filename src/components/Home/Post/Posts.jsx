@@ -9,9 +9,9 @@ const Posts = (props) => {
        <div>
         {
             data.map((item)=>{
-             return   <div class='item'>
-                <div class='title'> <p>{item.author}</p>  <p>{item.title}</p>   </div>
-                <div class='discription'> {item.description}</div>
+             return   <div className='item' key={item.id}>
+                <div className='title'> <p>{item.author}</p>  <p>{item.title}</p>   </div>
+                <div className='discription'> {item.description}</div>
                 </div>
             })
         }

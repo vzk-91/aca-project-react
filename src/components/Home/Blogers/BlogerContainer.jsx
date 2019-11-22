@@ -16,7 +16,7 @@ const BlogersContainer = () =>{
            
         });
     },[])
-    console.log(data)
+  
     return(
        <div className="blogers">
            <h2>Blogers</h2>

@@ -1,21 +1,26 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import BlogersContainer from './components/Blogers/BlogerContainer';
-import PostContainer from './components/Post/PostContainer';
 import Footer from './components/Footer/Footer';
 import './App.css';
+import Home from './components/Home/Home';
+import RegistrationContainer from './components/Registration/RegistrationContainer';
+import LoginContainer from './components/Login/LoginContainer';
+import WorkSpaceContainer from './components/WorkSpace/WorkSpaceContainer'
+import {BrowserRouter, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
+     <div className="App">
      <Header />
-     <div className="main">
-     <BlogersContainer  />
-     <PostContainer />
-     </div>
-     <Footer/>
+     <Route  path='/home'  render={()=> <Home/>}/>
+     <Route  path='/registration'  render={()=> <RegistrationContainer/>} />
+     <Route path='/login' render={()=><LoginContainer/>}/>
+     <Route  path='/workspace'  render={()=> <WorkSpaceContainer/>} />
+     <Route  path='/home'  render={()=> <Footer/>}/>
      
     </div>
+    </BrowserRouter>
   );
 }
 

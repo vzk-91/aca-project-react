@@ -14,7 +14,7 @@ const PostContainer = () => {
             })
     }, [])
        
-        console.log(data)
+      
 
     return(
      <div className="content">
